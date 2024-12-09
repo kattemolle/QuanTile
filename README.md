@@ -561,11 +561,11 @@ We recommend the use of `environment/environment.yml`.
 ``` bibtex
 @software{kattemolle2024quantile,
   author       = {Kattem\"olle, Joris},
-  title        = {Quantile},
+  title        = {QuanTile},
   month        = oct,
   year         = 2024,
   publisher    = {Zenodo},
-  doi          = {TBA}
+  doi          = {10.5281/zenodo.14336692}
 }
 ```
 
