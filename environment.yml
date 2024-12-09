@@ -1,0 +1,11 @@
+name: quantile
+dependencies:
+- python>=3
+- numpy
+- networkx
+- graphviz
+- pygraphviz
+- jupyter
+- pip
+- pip:
+  - z3-solver
