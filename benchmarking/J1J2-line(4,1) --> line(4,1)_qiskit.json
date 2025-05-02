@@ -1,0 +1,2322 @@
+{
+    "1": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 3,
+        "quantile_active_qubits": 6,
+        "depth": 11,
+        "swaps": 3,
+        "active_qubits": 6,
+        "wall_clock": 0.01302027702331543
+    },
+    "2": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 5,
+        "quantile_active_qubits": 10,
+        "depth": 21,
+        "swaps": 5,
+        "active_qubits": 10,
+        "wall_clock": 0.01113128662109375
+    },
+    "3": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 7,
+        "quantile_active_qubits": 14,
+        "depth": 31,
+        "swaps": 7,
+        "active_qubits": 14,
+        "wall_clock": 0.012907981872558594
+    },
+    "4": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 9,
+        "quantile_active_qubits": 18,
+        "depth": 41,
+        "swaps": 9,
+        "active_qubits": 18,
+        "wall_clock": 0.014880895614624023
+    },
+    "5": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 11,
+        "quantile_active_qubits": 22,
+        "depth": 51,
+        "swaps": 11,
+        "active_qubits": 22,
+        "wall_clock": 0.0174100399017334
+    },
+    "6": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 13,
+        "quantile_active_qubits": 26,
+        "depth": 61,
+        "swaps": 13,
+        "active_qubits": 26,
+        "wall_clock": 0.01961493492126465
+    },
+    "7": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 15,
+        "quantile_active_qubits": 30,
+        "depth": 71,
+        "swaps": 15,
+        "active_qubits": 30,
+        "wall_clock": 0.022270917892456055
+    },
+    "8": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 17,
+        "quantile_active_qubits": 34,
+        "depth": 81,
+        "swaps": 17,
+        "active_qubits": 34,
+        "wall_clock": 0.026615142822265625
+    },
+    "9": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 19,
+        "quantile_active_qubits": 38,
+        "depth": 91,
+        "swaps": 19,
+        "active_qubits": 38,
+        "wall_clock": 0.030597686767578125
+    },
+    "10": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 21,
+        "quantile_active_qubits": 42,
+        "depth": 101,
+        "swaps": 21,
+        "active_qubits": 42,
+        "wall_clock": 0.03295135498046875
+    },
+    "11": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 23,
+        "quantile_active_qubits": 46,
+        "depth": 138,
+        "swaps": 50,
+        "active_qubits": 46,
+        "wall_clock": 0.04027748107910156
+    },
+    "12": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 25,
+        "quantile_active_qubits": 50,
+        "depth": 154,
+        "swaps": 58,
+        "active_qubits": 50,
+        "wall_clock": 0.04533052444458008
+    },
+    "13": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 27,
+        "quantile_active_qubits": 54,
+        "depth": 180,
+        "swaps": 76,
+        "active_qubits": 54,
+        "wall_clock": 0.05985116958618164
+    },
+    "14": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 29,
+        "quantile_active_qubits": 58,
+        "depth": 166,
+        "swaps": 54,
+        "active_qubits": 58,
+        "wall_clock": 0.052213191986083984
+    },
+    "15": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 31,
+        "quantile_active_qubits": 62,
+        "depth": 170,
+        "swaps": 50,
+        "active_qubits": 62,
+        "wall_clock": 0.05533432960510254
+    },
+    "16": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 33,
+        "quantile_active_qubits": 66,
+        "depth": 218,
+        "swaps": 90,
+        "active_qubits": 66,
+        "wall_clock": 0.0601499080657959
+    },
+    "17": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 35,
+        "quantile_active_qubits": 70,
+        "depth": 324,
+        "swaps": 188,
+        "active_qubits": 70,
+        "wall_clock": 0.06995630264282227
+    },
+    "18": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 37,
+        "quantile_active_qubits": 74,
+        "depth": 269,
+        "swaps": 125,
+        "active_qubits": 74,
+        "wall_clock": 0.0723733901977539
+    },
+    "19": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 39,
+        "quantile_active_qubits": 78,
+        "depth": 252,
+        "swaps": 100,
+        "active_qubits": 78,
+        "wall_clock": 0.07144379615783691
+    },
+    "20": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 41,
+        "quantile_active_qubits": 82,
+        "depth": 437,
+        "swaps": 277,
+        "active_qubits": 82,
+        "wall_clock": 0.0921473503112793
+    },
+    "21": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 43,
+        "quantile_active_qubits": 86,
+        "depth": 331,
+        "swaps": 163,
+        "active_qubits": 86,
+        "wall_clock": 0.09050297737121582
+    },
+    "22": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 45,
+        "quantile_active_qubits": 90,
+        "depth": 509,
+        "swaps": 333,
+        "active_qubits": 90,
+        "wall_clock": 0.10666131973266602
+    },
+    "23": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 47,
+        "quantile_active_qubits": 94,
+        "depth": 459,
+        "swaps": 275,
+        "active_qubits": 94,
+        "wall_clock": 0.11062431335449219
+    },
+    "24": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 49,
+        "quantile_active_qubits": 98,
+        "depth": 507,
+        "swaps": 315,
+        "active_qubits": 98,
+        "wall_clock": 0.13260960578918457
+    },
+    "25": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 51,
+        "quantile_active_qubits": 102,
+        "depth": 590,
+        "swaps": 390,
+        "active_qubits": 102,
+        "wall_clock": 0.14452695846557617
+    },
+    "26": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 53,
+        "quantile_active_qubits": 106,
+        "depth": 502,
+        "swaps": 294,
+        "active_qubits": 106,
+        "wall_clock": 0.14716553688049316
+    },
+    "27": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 55,
+        "quantile_active_qubits": 110,
+        "depth": 620,
+        "swaps": 404,
+        "active_qubits": 110,
+        "wall_clock": 0.16508817672729492
+    },
+    "28": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 57,
+        "quantile_active_qubits": 114,
+        "depth": 734,
+        "swaps": 510,
+        "active_qubits": 114,
+        "wall_clock": 0.1913926601409912
+    },
+    "29": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 59,
+        "quantile_active_qubits": 118,
+        "depth": 757,
+        "swaps": 525,
+        "active_qubits": 118,
+        "wall_clock": 0.17942166328430176
+    },
+    "30": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 61,
+        "quantile_active_qubits": 122,
+        "depth": 772,
+        "swaps": 532,
+        "active_qubits": 122,
+        "wall_clock": 0.20107293128967285
+    },
+    "31": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 63,
+        "quantile_active_qubits": 126,
+        "depth": 867,
+        "swaps": 619,
+        "active_qubits": 126,
+        "wall_clock": 0.2205033302307129
+    },
+    "32": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 65,
+        "quantile_active_qubits": 130,
+        "depth": 922,
+        "swaps": 666,
+        "active_qubits": 130,
+        "wall_clock": 0.22309589385986328
+    },
+    "33": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 67,
+        "quantile_active_qubits": 134,
+        "depth": 917,
+        "swaps": 653,
+        "active_qubits": 134,
+        "wall_clock": 0.23292231559753418
+    },
+    "34": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 69,
+        "quantile_active_qubits": 138,
+        "depth": 879,
+        "swaps": 607,
+        "active_qubits": 138,
+        "wall_clock": 0.24638628959655762
+    },
+    "35": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 71,
+        "quantile_active_qubits": 142,
+        "depth": 1136,
+        "swaps": 856,
+        "active_qubits": 142,
+        "wall_clock": 0.26869630813598633
+    },
+    "36": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 73,
+        "quantile_active_qubits": 146,
+        "depth": 1208,
+        "swaps": 920,
+        "active_qubits": 146,
+        "wall_clock": 0.29991698265075684
+    },
+    "37": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 75,
+        "quantile_active_qubits": 150,
+        "depth": 1109,
+        "swaps": 813,
+        "active_qubits": 150,
+        "wall_clock": 0.2967197895050049
+    },
+    "38": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 77,
+        "quantile_active_qubits": 154,
+        "depth": 1242,
+        "swaps": 938,
+        "active_qubits": 154,
+        "wall_clock": 0.32777953147888184
+    },
+    "39": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 79,
+        "quantile_active_qubits": 158,
+        "depth": 1452,
+        "swaps": 1140,
+        "active_qubits": 158,
+        "wall_clock": 0.36742424964904785
+    },
+    "40": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 81,
+        "quantile_active_qubits": 162,
+        "depth": 1311,
+        "swaps": 991,
+        "active_qubits": 162,
+        "wall_clock": 0.3875865936279297
+    },
+    "41": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 83,
+        "quantile_active_qubits": 166,
+        "depth": 1301,
+        "swaps": 973,
+        "active_qubits": 166,
+        "wall_clock": 0.38994383811950684
+    },
+    "42": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 85,
+        "quantile_active_qubits": 170,
+        "depth": 1490,
+        "swaps": 1154,
+        "active_qubits": 170,
+        "wall_clock": 0.457444429397583
+    },
+    "43": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 87,
+        "quantile_active_qubits": 174,
+        "depth": 1862,
+        "swaps": 1518,
+        "active_qubits": 174,
+        "wall_clock": 0.5727050304412842
+    },
+    "44": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 89,
+        "quantile_active_qubits": 178,
+        "depth": 1607,
+        "swaps": 1255,
+        "active_qubits": 178,
+        "wall_clock": 0.5304300785064697
+    },
+    "45": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 91,
+        "quantile_active_qubits": 182,
+        "depth": 1838,
+        "swaps": 1478,
+        "active_qubits": 182,
+        "wall_clock": 0.5288271903991699
+    },
+    "46": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 93,
+        "quantile_active_qubits": 186,
+        "depth": 1951,
+        "swaps": 1583,
+        "active_qubits": 186,
+        "wall_clock": 0.7697279453277588
+    },
+    "47": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 95,
+        "quantile_active_qubits": 190,
+        "depth": 1845,
+        "swaps": 1469,
+        "active_qubits": 190,
+        "wall_clock": 0.5993306636810303
+    },
+    "48": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 97,
+        "quantile_active_qubits": 194,
+        "depth": 1941,
+        "swaps": 1557,
+        "active_qubits": 194,
+        "wall_clock": 0.6592569351196289
+    },
+    "49": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 99,
+        "quantile_active_qubits": 198,
+        "depth": 2248,
+        "swaps": 1856,
+        "active_qubits": 198,
+        "wall_clock": 0.7944409847259521
+    },
+    "50": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 101,
+        "quantile_active_qubits": 202,
+        "depth": 2421,
+        "swaps": 2021,
+        "active_qubits": 202,
+        "wall_clock": 0.7274279594421387
+    },
+    "51": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 103,
+        "quantile_active_qubits": 206,
+        "depth": 2343,
+        "swaps": 1935,
+        "active_qubits": 206,
+        "wall_clock": 0.8529553413391113
+    },
+    "52": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 105,
+        "quantile_active_qubits": 210,
+        "depth": 2487,
+        "swaps": 2071,
+        "active_qubits": 210,
+        "wall_clock": 1.0701205730438232
+    },
+    "53": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 107,
+        "quantile_active_qubits": 214,
+        "depth": 2555,
+        "swaps": 2131,
+        "active_qubits": 214,
+        "wall_clock": 1.101114273071289
+    },
+    "54": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 109,
+        "quantile_active_qubits": 218,
+        "depth": 3093,
+        "swaps": 2661,
+        "active_qubits": 218,
+        "wall_clock": 1.0874412059783936
+    },
+    "55": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 111,
+        "quantile_active_qubits": 222,
+        "depth": 2914,
+        "swaps": 2474,
+        "active_qubits": 222,
+        "wall_clock": 1.0755481719970703
+    },
+    "56": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 113,
+        "quantile_active_qubits": 226,
+        "depth": 3361,
+        "swaps": 2913,
+        "active_qubits": 226,
+        "wall_clock": 1.2152206897735596
+    },
+    "57": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 115,
+        "quantile_active_qubits": 230,
+        "depth": 2755,
+        "swaps": 2299,
+        "active_qubits": 230,
+        "wall_clock": 1.5854897499084473
+    },
+    "58": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 117,
+        "quantile_active_qubits": 234,
+        "depth": 2937,
+        "swaps": 2473,
+        "active_qubits": 234,
+        "wall_clock": 1.4390349388122559
+    },
+    "59": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 119,
+        "quantile_active_qubits": 238,
+        "depth": 3100,
+        "swaps": 2628,
+        "active_qubits": 238,
+        "wall_clock": 1.6816673278808594
+    },
+    "60": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 121,
+        "quantile_active_qubits": 242,
+        "depth": 2978,
+        "swaps": 2498,
+        "active_qubits": 242,
+        "wall_clock": 1.6471827030181885
+    },
+    "61": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 123,
+        "quantile_active_qubits": 246,
+        "depth": 3515,
+        "swaps": 3027,
+        "active_qubits": 246,
+        "wall_clock": 1.7980608940124512
+    },
+    "62": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 125,
+        "quantile_active_qubits": 250,
+        "depth": 3674,
+        "swaps": 3178,
+        "active_qubits": 250,
+        "wall_clock": 1.8845479488372803
+    },
+    "63": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 127,
+        "quantile_active_qubits": 254,
+        "depth": 3564,
+        "swaps": 3060,
+        "active_qubits": 254,
+        "wall_clock": 1.7799766063690186
+    },
+    "64": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 129,
+        "quantile_active_qubits": 258,
+        "depth": 4384,
+        "swaps": 3872,
+        "active_qubits": 258,
+        "wall_clock": 2.3241002559661865
+    },
+    "65": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 131,
+        "quantile_active_qubits": 262,
+        "depth": 4182,
+        "swaps": 3662,
+        "active_qubits": 262,
+        "wall_clock": 2.3064398765563965
+    },
+    "66": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 133,
+        "quantile_active_qubits": 266,
+        "depth": 4156,
+        "swaps": 3628,
+        "active_qubits": 266,
+        "wall_clock": 2.80064058303833
+    },
+    "67": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 135,
+        "quantile_active_qubits": 270,
+        "depth": 4198,
+        "swaps": 3662,
+        "active_qubits": 270,
+        "wall_clock": 2.8164570331573486
+    },
+    "68": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 137,
+        "quantile_active_qubits": 274,
+        "depth": 3656,
+        "swaps": 3112,
+        "active_qubits": 274,
+        "wall_clock": 2.802743911743164
+    },
+    "69": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 139,
+        "quantile_active_qubits": 278,
+        "depth": 4801,
+        "swaps": 4249,
+        "active_qubits": 278,
+        "wall_clock": 3.3244760036468506
+    },
+    "70": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 141,
+        "quantile_active_qubits": 282,
+        "depth": 4089,
+        "swaps": 3529,
+        "active_qubits": 282,
+        "wall_clock": 3.0467216968536377
+    },
+    "71": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 143,
+        "quantile_active_qubits": 286,
+        "depth": 5328,
+        "swaps": 4760,
+        "active_qubits": 286,
+        "wall_clock": 3.28448486328125
+    },
+    "72": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 145,
+        "quantile_active_qubits": 290,
+        "depth": 4659,
+        "swaps": 4083,
+        "active_qubits": 290,
+        "wall_clock": 4.080140590667725
+    },
+    "73": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 147,
+        "quantile_active_qubits": 294,
+        "depth": 5074,
+        "swaps": 4490,
+        "active_qubits": 294,
+        "wall_clock": 3.9231300354003906
+    },
+    "74": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 149,
+        "quantile_active_qubits": 298,
+        "depth": 5141,
+        "swaps": 4549,
+        "active_qubits": 298,
+        "wall_clock": 4.271921873092651
+    },
+    "75": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 151,
+        "quantile_active_qubits": 302,
+        "depth": 4973,
+        "swaps": 4373,
+        "active_qubits": 302,
+        "wall_clock": 4.501727104187012
+    },
+    "76": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 153,
+        "quantile_active_qubits": 306,
+        "depth": 5236,
+        "swaps": 4628,
+        "active_qubits": 306,
+        "wall_clock": 5.03708291053772
+    },
+    "77": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 155,
+        "quantile_active_qubits": 310,
+        "depth": 5489,
+        "swaps": 4873,
+        "active_qubits": 310,
+        "wall_clock": 4.50731348991394
+    },
+    "78": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 157,
+        "quantile_active_qubits": 314,
+        "depth": 5562,
+        "swaps": 4938,
+        "active_qubits": 314,
+        "wall_clock": 5.098103761672974
+    },
+    "79": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 159,
+        "quantile_active_qubits": 318,
+        "depth": 6095,
+        "swaps": 5463,
+        "active_qubits": 318,
+        "wall_clock": 5.674819707870483
+    },
+    "80": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 161,
+        "quantile_active_qubits": 322,
+        "depth": 6262,
+        "swaps": 5622,
+        "active_qubits": 322,
+        "wall_clock": 6.00016188621521
+    },
+    "81": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 163,
+        "quantile_active_qubits": 326,
+        "depth": 6348,
+        "swaps": 5700,
+        "active_qubits": 326,
+        "wall_clock": 6.572803258895874
+    },
+    "82": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 165,
+        "quantile_active_qubits": 330,
+        "depth": 7099,
+        "swaps": 6443,
+        "active_qubits": 330,
+        "wall_clock": 5.971226930618286
+    },
+    "83": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 167,
+        "quantile_active_qubits": 334,
+        "depth": 6636,
+        "swaps": 5972,
+        "active_qubits": 334,
+        "wall_clock": 7.320095777511597
+    },
+    "84": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 169,
+        "quantile_active_qubits": 338,
+        "depth": 6500,
+        "swaps": 5828,
+        "active_qubits": 338,
+        "wall_clock": 7.169148683547974
+    },
+    "85": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 171,
+        "quantile_active_qubits": 342,
+        "depth": 6552,
+        "swaps": 5872,
+        "active_qubits": 342,
+        "wall_clock": 8.276798009872437
+    },
+    "86": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 173,
+        "quantile_active_qubits": 346,
+        "depth": 7522,
+        "swaps": 6834,
+        "active_qubits": 346,
+        "wall_clock": 8.180439472198486
+    },
+    "87": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 175,
+        "quantile_active_qubits": 350,
+        "depth": 6696,
+        "swaps": 6000,
+        "active_qubits": 350,
+        "wall_clock": 10.544000148773193
+    },
+    "88": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 177,
+        "quantile_active_qubits": 354,
+        "depth": 7447,
+        "swaps": 6743,
+        "active_qubits": 354,
+        "wall_clock": 9.638001918792725
+    },
+    "89": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 179,
+        "quantile_active_qubits": 358,
+        "depth": 8259,
+        "swaps": 7547,
+        "active_qubits": 358,
+        "wall_clock": 10.048437595367432
+    },
+    "90": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 181,
+        "quantile_active_qubits": 362,
+        "depth": 6669,
+        "swaps": 5949,
+        "active_qubits": 362,
+        "wall_clock": 10.769767761230469
+    },
+    "91": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 183,
+        "quantile_active_qubits": 366,
+        "depth": 7786,
+        "swaps": 7058,
+        "active_qubits": 366,
+        "wall_clock": 12.916401386260986
+    },
+    "92": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 185,
+        "quantile_active_qubits": 370,
+        "depth": 8523,
+        "swaps": 7787,
+        "active_qubits": 370,
+        "wall_clock": 12.151104927062988
+    },
+    "93": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 187,
+        "quantile_active_qubits": 374,
+        "depth": 8643,
+        "swaps": 7899,
+        "active_qubits": 374,
+        "wall_clock": 12.6112961769104
+    },
+    "94": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 189,
+        "quantile_active_qubits": 378,
+        "depth": 9023,
+        "swaps": 8271,
+        "active_qubits": 378,
+        "wall_clock": 13.639955043792725
+    },
+    "95": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 191,
+        "quantile_active_qubits": 382,
+        "depth": 7722,
+        "swaps": 6962,
+        "active_qubits": 382,
+        "wall_clock": 14.701943397521973
+    },
+    "96": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 193,
+        "quantile_active_qubits": 386,
+        "depth": 8849,
+        "swaps": 8081,
+        "active_qubits": 386,
+        "wall_clock": 15.319843530654907
+    },
+    "97": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 195,
+        "quantile_active_qubits": 390,
+        "depth": 9580,
+        "swaps": 8804,
+        "active_qubits": 390,
+        "wall_clock": 16.85507869720459
+    },
+    "98": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 197,
+        "quantile_active_qubits": 394,
+        "depth": 8910,
+        "swaps": 8126,
+        "active_qubits": 394,
+        "wall_clock": 17.06969976425171
+    },
+    "99": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 199,
+        "quantile_active_qubits": 398,
+        "depth": 10808,
+        "swaps": 10016,
+        "active_qubits": 398,
+        "wall_clock": 15.366172075271606
+    },
+    "100": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 201,
+        "quantile_active_qubits": 402,
+        "depth": 9993,
+        "swaps": 9193,
+        "active_qubits": 402,
+        "wall_clock": 18.899329662322998
+    },
+    "101": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 203,
+        "quantile_active_qubits": 406,
+        "depth": 10341,
+        "swaps": 9533,
+        "active_qubits": 406,
+        "wall_clock": 20.725703239440918
+    },
+    "102": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 205,
+        "quantile_active_qubits": 410,
+        "depth": 10255,
+        "swaps": 9439,
+        "active_qubits": 410,
+        "wall_clock": 20.839359283447266
+    },
+    "103": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 207,
+        "quantile_active_qubits": 414,
+        "depth": 8894,
+        "swaps": 8070,
+        "active_qubits": 414,
+        "wall_clock": 21.143491983413696
+    },
+    "104": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 209,
+        "quantile_active_qubits": 418,
+        "depth": 10051,
+        "swaps": 9219,
+        "active_qubits": 418,
+        "wall_clock": 23.092562675476074
+    },
+    "105": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 211,
+        "quantile_active_qubits": 422,
+        "depth": 10807,
+        "swaps": 9967,
+        "active_qubits": 422,
+        "wall_clock": 24.576435327529907
+    },
+    "106": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 213,
+        "quantile_active_qubits": 426,
+        "depth": 11058,
+        "swaps": 10210,
+        "active_qubits": 426,
+        "wall_clock": 25.81859064102173
+    },
+    "107": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 215,
+        "quantile_active_qubits": 430,
+        "depth": 11147,
+        "swaps": 10291,
+        "active_qubits": 430,
+        "wall_clock": 28.34514045715332
+    },
+    "108": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 217,
+        "quantile_active_qubits": 434,
+        "depth": 11819,
+        "swaps": 10955,
+        "active_qubits": 434,
+        "wall_clock": 26.735645532608032
+    },
+    "109": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 219,
+        "quantile_active_qubits": 438,
+        "depth": 12745,
+        "swaps": 11873,
+        "active_qubits": 438,
+        "wall_clock": 33.223753690719604
+    },
+    "110": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 221,
+        "quantile_active_qubits": 442,
+        "depth": 12141,
+        "swaps": 11261,
+        "active_qubits": 442,
+        "wall_clock": 35.11223077774048
+    },
+    "111": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 223,
+        "quantile_active_qubits": 446,
+        "depth": 11460,
+        "swaps": 10572,
+        "active_qubits": 446,
+        "wall_clock": 33.42862892150879
+    },
+    "112": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 225,
+        "quantile_active_qubits": 450,
+        "depth": 10619,
+        "swaps": 9723,
+        "active_qubits": 450,
+        "wall_clock": 36.49100422859192
+    },
+    "113": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 227,
+        "quantile_active_qubits": 454,
+        "depth": 10732,
+        "swaps": 9828,
+        "active_qubits": 454,
+        "wall_clock": 42.9459924697876
+    },
+    "114": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 229,
+        "quantile_active_qubits": 458,
+        "depth": 13424,
+        "swaps": 12512,
+        "active_qubits": 458,
+        "wall_clock": 44.55320620536804
+    },
+    "115": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 231,
+        "quantile_active_qubits": 462,
+        "depth": 11561,
+        "swaps": 10641,
+        "active_qubits": 462,
+        "wall_clock": 45.45364546775818
+    },
+    "116": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 233,
+        "quantile_active_qubits": 466,
+        "depth": 13992,
+        "swaps": 13064,
+        "active_qubits": 466,
+        "wall_clock": 48.632824420928955
+    },
+    "117": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 235,
+        "quantile_active_qubits": 470,
+        "depth": 13417,
+        "swaps": 12481,
+        "active_qubits": 470,
+        "wall_clock": 49.10378360748291
+    },
+    "118": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 237,
+        "quantile_active_qubits": 474,
+        "depth": 15743,
+        "swaps": 14799,
+        "active_qubits": 474,
+        "wall_clock": 56.90449237823486
+    },
+    "119": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 239,
+        "quantile_active_qubits": 478,
+        "depth": 14830,
+        "swaps": 13878,
+        "active_qubits": 478,
+        "wall_clock": 59.23021960258484
+    },
+    "120": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 241,
+        "quantile_active_qubits": 482,
+        "depth": 15288,
+        "swaps": 14328,
+        "active_qubits": 482,
+        "wall_clock": 63.847758054733276
+    },
+    "121": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 243,
+        "quantile_active_qubits": 486,
+        "depth": 14145,
+        "swaps": 13177,
+        "active_qubits": 486,
+        "wall_clock": 62.3916289806366
+    },
+    "122": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 245,
+        "quantile_active_qubits": 490,
+        "depth": 15986,
+        "swaps": 15010,
+        "active_qubits": 490,
+        "wall_clock": 66.62880158424377
+    },
+    "123": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 247,
+        "quantile_active_qubits": 494,
+        "depth": 15814,
+        "swaps": 14830,
+        "active_qubits": 494,
+        "wall_clock": 68.58463764190674
+    },
+    "124": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 249,
+        "quantile_active_qubits": 498,
+        "depth": 15429,
+        "swaps": 14437,
+        "active_qubits": 498,
+        "wall_clock": 80.88529300689697
+    },
+    "125": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 251,
+        "quantile_active_qubits": 502,
+        "depth": 16137,
+        "swaps": 15137,
+        "active_qubits": 502,
+        "wall_clock": 87.76734185218811
+    },
+    "126": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 253,
+        "quantile_active_qubits": 506,
+        "depth": 15251,
+        "swaps": 14243,
+        "active_qubits": 506,
+        "wall_clock": 80.75582647323608
+    },
+    "127": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 255,
+        "quantile_active_qubits": 510,
+        "depth": 17172,
+        "swaps": 16156,
+        "active_qubits": 510,
+        "wall_clock": 88.26093482971191
+    },
+    "128": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 257,
+        "quantile_active_qubits": 514,
+        "depth": 17658,
+        "swaps": 16634,
+        "active_qubits": 514,
+        "wall_clock": 91.11272192001343
+    },
+    "129": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 259,
+        "quantile_active_qubits": 518,
+        "depth": 17391,
+        "swaps": 16359,
+        "active_qubits": 518,
+        "wall_clock": 104.0915961265564
+    },
+    "130": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 261,
+        "quantile_active_qubits": 522,
+        "depth": 17927,
+        "swaps": 16887,
+        "active_qubits": 522,
+        "wall_clock": 103.74798226356506
+    },
+    "131": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 263,
+        "quantile_active_qubits": 526,
+        "depth": 16394,
+        "swaps": 15346,
+        "active_qubits": 526,
+        "wall_clock": 113.38514971733093
+    },
+    "132": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 265,
+        "quantile_active_qubits": 530,
+        "depth": 16581,
+        "swaps": 15525,
+        "active_qubits": 530,
+        "wall_clock": 122.61725282669067
+    },
+    "133": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 267,
+        "quantile_active_qubits": 534,
+        "depth": 18491,
+        "swaps": 17427,
+        "active_qubits": 534,
+        "wall_clock": 120.84171986579895
+    },
+    "134": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 269,
+        "quantile_active_qubits": 538,
+        "depth": 19351,
+        "swaps": 18279,
+        "active_qubits": 538,
+        "wall_clock": 125.78433060646057
+    },
+    "135": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 271,
+        "quantile_active_qubits": 542,
+        "depth": 18820,
+        "swaps": 17740,
+        "active_qubits": 542,
+        "wall_clock": 134.35445356369019
+    },
+    "136": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 273,
+        "quantile_active_qubits": 546,
+        "depth": 18812,
+        "swaps": 17724,
+        "active_qubits": 546,
+        "wall_clock": 137.38947415351868
+    },
+    "137": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 275,
+        "quantile_active_qubits": 550,
+        "depth": 19812,
+        "swaps": 18716,
+        "active_qubits": 550,
+        "wall_clock": 148.96001768112183
+    },
+    "138": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 277,
+        "quantile_active_qubits": 554,
+        "depth": 18675,
+        "swaps": 17571,
+        "active_qubits": 554,
+        "wall_clock": 150.2413296699524
+    },
+    "139": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 279,
+        "quantile_active_qubits": 558,
+        "depth": 21030,
+        "swaps": 19918,
+        "active_qubits": 558,
+        "wall_clock": 157.41560196876526
+    },
+    "140": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 281,
+        "quantile_active_qubits": 562,
+        "depth": 20210,
+        "swaps": 19090,
+        "active_qubits": 562,
+        "wall_clock": 183.5682234764099
+    },
+    "141": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 283,
+        "quantile_active_qubits": 566,
+        "depth": 18707,
+        "swaps": 17579,
+        "active_qubits": 566,
+        "wall_clock": 166.68077278137207
+    },
+    "142": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 285,
+        "quantile_active_qubits": 570,
+        "depth": 18239,
+        "swaps": 17103,
+        "active_qubits": 570,
+        "wall_clock": 168.27569890022278
+    },
+    "143": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 287,
+        "quantile_active_qubits": 574,
+        "depth": 24970,
+        "swaps": 23826,
+        "active_qubits": 574,
+        "wall_clock": 186.1349151134491
+    },
+    "144": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 289,
+        "quantile_active_qubits": 578,
+        "depth": 20740,
+        "swaps": 19588,
+        "active_qubits": 578,
+        "wall_clock": 182.9845585823059
+    },
+    "145": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 291,
+        "quantile_active_qubits": 582,
+        "depth": 23663,
+        "swaps": 22503,
+        "active_qubits": 582,
+        "wall_clock": 192.98059368133545
+    },
+    "146": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 293,
+        "quantile_active_qubits": 586,
+        "depth": 20784,
+        "swaps": 19616,
+        "active_qubits": 586,
+        "wall_clock": 199.42039823532104
+    },
+    "147": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 295,
+        "quantile_active_qubits": 590,
+        "depth": 23898,
+        "swaps": 22722,
+        "active_qubits": 590,
+        "wall_clock": 211.2574498653412
+    },
+    "148": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 297,
+        "quantile_active_qubits": 594,
+        "depth": 28336,
+        "swaps": 27152,
+        "active_qubits": 594,
+        "wall_clock": 215.9023678302765
+    },
+    "149": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 299,
+        "quantile_active_qubits": 598,
+        "depth": 27371,
+        "swaps": 26179,
+        "active_qubits": 598,
+        "wall_clock": 230.84485268592834
+    },
+    "150": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 301,
+        "quantile_active_qubits": 602,
+        "depth": 23146,
+        "swaps": 21946,
+        "active_qubits": 602,
+        "wall_clock": 217.2529740333557
+    },
+    "151": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 303,
+        "quantile_active_qubits": 606,
+        "depth": 23133,
+        "swaps": 21925,
+        "active_qubits": 606,
+        "wall_clock": 250.98427271842957
+    },
+    "152": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 305,
+        "quantile_active_qubits": 610,
+        "depth": 25262,
+        "swaps": 24046,
+        "active_qubits": 610,
+        "wall_clock": 248.20736503601074
+    },
+    "153": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 307,
+        "quantile_active_qubits": 614,
+        "depth": 27985,
+        "swaps": 26761,
+        "active_qubits": 614,
+        "wall_clock": 257.5216317176819
+    },
+    "154": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 309,
+        "quantile_active_qubits": 618,
+        "depth": 30446,
+        "swaps": 29214,
+        "active_qubits": 618,
+        "wall_clock": 273.5061287879944
+    },
+    "155": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 311,
+        "quantile_active_qubits": 622,
+        "depth": 27507,
+        "swaps": 26267,
+        "active_qubits": 622,
+        "wall_clock": 283.05587935447693
+    },
+    "156": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 313,
+        "quantile_active_qubits": 626,
+        "depth": 30692,
+        "swaps": 29442,
+        "active_qubits": 626,
+        "wall_clock": 285.38687777519226
+    },
+    "157": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 315,
+        "quantile_active_qubits": 630,
+        "depth": 28509,
+        "swaps": 27253,
+        "active_qubits": 630,
+        "wall_clock": 335.1941418647766
+    },
+    "158": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 317,
+        "quantile_active_qubits": 634,
+        "depth": 28391,
+        "swaps": 27127,
+        "active_qubits": 634,
+        "wall_clock": 311.3519477844238
+    },
+    "159": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 319,
+        "quantile_active_qubits": 638,
+        "depth": 30560,
+        "swaps": 29288,
+        "active_qubits": 638,
+        "wall_clock": 333.7014672756195
+    },
+    "160": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 321,
+        "quantile_active_qubits": 642,
+        "depth": 28869,
+        "swaps": 27589,
+        "active_qubits": 642,
+        "wall_clock": 333.39006781578064
+    },
+    "161": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 323,
+        "quantile_active_qubits": 646,
+        "depth": 28682,
+        "swaps": 27394,
+        "active_qubits": 646,
+        "wall_clock": 347.22401189804077
+    },
+    "162": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 325,
+        "quantile_active_qubits": 650,
+        "depth": 27392,
+        "swaps": 26096,
+        "active_qubits": 650,
+        "wall_clock": 353.555561542511
+    },
+    "163": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 327,
+        "quantile_active_qubits": 654,
+        "depth": 28946,
+        "swaps": 27642,
+        "active_qubits": 654,
+        "wall_clock": 367.968674659729
+    },
+    "164": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 329,
+        "quantile_active_qubits": 658,
+        "depth": 30421,
+        "swaps": 29109,
+        "active_qubits": 658,
+        "wall_clock": 397.4072513580322
+    },
+    "165": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 331,
+        "quantile_active_qubits": 662,
+        "depth": 31365,
+        "swaps": 30045,
+        "active_qubits": 662,
+        "wall_clock": 384.88806676864624
+    },
+    "166": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 333,
+        "quantile_active_qubits": 666,
+        "depth": 32192,
+        "swaps": 30864,
+        "active_qubits": 666,
+        "wall_clock": 414.5623953342438
+    },
+    "167": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 335,
+        "quantile_active_qubits": 670,
+        "depth": 30399,
+        "swaps": 29063,
+        "active_qubits": 670,
+        "wall_clock": 436.18958163261414
+    },
+    "168": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 337,
+        "quantile_active_qubits": 674,
+        "depth": 35288,
+        "swaps": 33944,
+        "active_qubits": 674,
+        "wall_clock": 432.988730430603
+    },
+    "169": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 339,
+        "quantile_active_qubits": 678,
+        "depth": 30289,
+        "swaps": 28937,
+        "active_qubits": 678,
+        "wall_clock": 423.89814734458923
+    },
+    "170": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 341,
+        "quantile_active_qubits": 682,
+        "depth": 34626,
+        "swaps": 33266,
+        "active_qubits": 682,
+        "wall_clock": 446.79138565063477
+    },
+    "171": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 343,
+        "quantile_active_qubits": 686,
+        "depth": 33590,
+        "swaps": 32222,
+        "active_qubits": 686,
+        "wall_clock": 474.5304491519928
+    },
+    "172": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 345,
+        "quantile_active_qubits": 690,
+        "depth": 37317,
+        "swaps": 35941,
+        "active_qubits": 690,
+        "wall_clock": 458.1315379142761
+    },
+    "173": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 347,
+        "quantile_active_qubits": 694,
+        "depth": 33822,
+        "swaps": 32438,
+        "active_qubits": 694,
+        "wall_clock": 494.4903836250305
+    },
+    "174": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 349,
+        "quantile_active_qubits": 698,
+        "depth": 34322,
+        "swaps": 32930,
+        "active_qubits": 698,
+        "wall_clock": 479.59642338752747
+    },
+    "175": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 351,
+        "quantile_active_qubits": 702,
+        "depth": 36838,
+        "swaps": 35438,
+        "active_qubits": 702,
+        "wall_clock": 537.8310174942017
+    },
+    "176": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 353,
+        "quantile_active_qubits": 706,
+        "depth": 36378,
+        "swaps": 34970,
+        "active_qubits": 706,
+        "wall_clock": 522.380368232727
+    },
+    "177": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 355,
+        "quantile_active_qubits": 710,
+        "depth": 36677,
+        "swaps": 35261,
+        "active_qubits": 710,
+        "wall_clock": 536.7690334320068
+    },
+    "178": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 357,
+        "quantile_active_qubits": 714,
+        "depth": 34437,
+        "swaps": 33013,
+        "active_qubits": 714,
+        "wall_clock": 536.8828325271606
+    },
+    "179": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 359,
+        "quantile_active_qubits": 718,
+        "depth": 37039,
+        "swaps": 35607,
+        "active_qubits": 718,
+        "wall_clock": 550.5676050186157
+    },
+    "180": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 361,
+        "quantile_active_qubits": 722,
+        "depth": 41788,
+        "swaps": 40348,
+        "active_qubits": 722,
+        "wall_clock": 578.9444513320923
+    },
+    "181": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 363,
+        "quantile_active_qubits": 726,
+        "depth": 40881,
+        "swaps": 39433,
+        "active_qubits": 726,
+        "wall_clock": 626.8202149868011
+    },
+    "182": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 365,
+        "quantile_active_qubits": 730,
+        "depth": 37512,
+        "swaps": 36056,
+        "active_qubits": 730,
+        "wall_clock": 619.2262208461761
+    },
+    "183": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 367,
+        "quantile_active_qubits": 734,
+        "depth": 40676,
+        "swaps": 39212,
+        "active_qubits": 734,
+        "wall_clock": 599.1055562496185
+    },
+    "184": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 369,
+        "quantile_active_qubits": 738,
+        "depth": 41697,
+        "swaps": 40225,
+        "active_qubits": 738,
+        "wall_clock": 615.7380211353302
+    },
+    "185": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 371,
+        "quantile_active_qubits": 742,
+        "depth": 43098,
+        "swaps": 41618,
+        "active_qubits": 742,
+        "wall_clock": 616.4943339824677
+    },
+    "186": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 373,
+        "quantile_active_qubits": 746,
+        "depth": 46252,
+        "swaps": 44764,
+        "active_qubits": 746,
+        "wall_clock": 669.3956816196442
+    },
+    "187": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 375,
+        "quantile_active_qubits": 750,
+        "depth": 45086,
+        "swaps": 43589,
+        "active_qubits": 750,
+        "wall_clock": 652.9823966026306
+    },
+    "188": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 377,
+        "quantile_active_qubits": 754,
+        "depth": 48076,
+        "swaps": 46572,
+        "active_qubits": 754,
+        "wall_clock": 721.8716893196106
+    },
+    "189": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 379,
+        "quantile_active_qubits": 758,
+        "depth": 47248,
+        "swaps": 45736,
+        "active_qubits": 758,
+        "wall_clock": 709.6818795204163
+    },
+    "190": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 381,
+        "quantile_active_qubits": 762,
+        "depth": 48571,
+        "swaps": 47051,
+        "active_qubits": 762,
+        "wall_clock": 771.16388630867
+    },
+    "191": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 383,
+        "quantile_active_qubits": 766,
+        "depth": 43699,
+        "swaps": 42170,
+        "active_qubits": 766,
+        "wall_clock": 689.9571921825409
+    },
+    "192": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 385,
+        "quantile_active_qubits": 770,
+        "depth": 45723,
+        "swaps": 44187,
+        "active_qubits": 770,
+        "wall_clock": 724.7409074306488
+    },
+    "193": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 387,
+        "quantile_active_qubits": 774,
+        "depth": 46085,
+        "swaps": 44541,
+        "active_qubits": 774,
+        "wall_clock": 737.3784303665161
+    },
+    "194": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 389,
+        "quantile_active_qubits": 778,
+        "depth": 42552,
+        "swaps": 41000,
+        "active_qubits": 778,
+        "wall_clock": 772.037228345871
+    },
+    "195": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 391,
+        "quantile_active_qubits": 782,
+        "depth": 46635,
+        "swaps": 45072,
+        "active_qubits": 782,
+        "wall_clock": 817.9358019828796
+    },
+    "196": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 393,
+        "quantile_active_qubits": 786,
+        "depth": 52845,
+        "swaps": 51277,
+        "active_qubits": 786,
+        "wall_clock": 801.8506553173065
+    },
+    "197": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 395,
+        "quantile_active_qubits": 790,
+        "depth": 45174,
+        "swaps": 43598,
+        "active_qubits": 790,
+        "wall_clock": 852.4570226669312
+    },
+    "198": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 397,
+        "quantile_active_qubits": 794,
+        "depth": 43216,
+        "swaps": 41632,
+        "active_qubits": 794,
+        "wall_clock": 833.7509543895721
+    },
+    "199": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 399,
+        "quantile_active_qubits": 798,
+        "depth": 51766,
+        "swaps": 50173,
+        "active_qubits": 798,
+        "wall_clock": 888.8652100563049
+    },
+    "200": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 401,
+        "quantile_active_qubits": 802,
+        "depth": 55144,
+        "swaps": 53544,
+        "active_qubits": 802,
+        "wall_clock": 942.2725381851196
+    },
+    "201": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 403,
+        "quantile_active_qubits": 806,
+        "depth": 48742,
+        "swaps": 47134,
+        "active_qubits": 806,
+        "wall_clock": 874.9892678260803
+    },
+    "202": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 405,
+        "quantile_active_qubits": 810,
+        "depth": 49869,
+        "swaps": 48253,
+        "active_qubits": 810,
+        "wall_clock": 881.4451725482941
+    },
+    "203": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 407,
+        "quantile_active_qubits": 814,
+        "depth": 57472,
+        "swaps": 55848,
+        "active_qubits": 814,
+        "wall_clock": 946.9070608615875
+    },
+    "204": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 409,
+        "quantile_active_qubits": 818,
+        "depth": 53905,
+        "swaps": 52273,
+        "active_qubits": 818,
+        "wall_clock": 951.6918067932129
+    },
+    "205": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 411,
+        "quantile_active_qubits": 822,
+        "depth": 48090,
+        "swaps": 46450,
+        "active_qubits": 822,
+        "wall_clock": 913.8488700389862
+    },
+    "206": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 413,
+        "quantile_active_qubits": 826,
+        "depth": 57395,
+        "swaps": 55747,
+        "active_qubits": 826,
+        "wall_clock": 1010.0848710536957
+    },
+    "207": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 415,
+        "quantile_active_qubits": 830,
+        "depth": 50710,
+        "swaps": 49054,
+        "active_qubits": 830,
+        "wall_clock": 1012.8692693710327
+    },
+    "208": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 417,
+        "quantile_active_qubits": 834,
+        "depth": 52347,
+        "swaps": 50683,
+        "active_qubits": 834,
+        "wall_clock": 1132.9954912662506
+    },
+    "209": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 419,
+        "quantile_active_qubits": 838,
+        "depth": 53440,
+        "swaps": 51768,
+        "active_qubits": 838,
+        "wall_clock": 1093.9461433887482
+    },
+    "210": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 421,
+        "quantile_active_qubits": 842,
+        "depth": 59294,
+        "swaps": 57613,
+        "active_qubits": 842,
+        "wall_clock": 1130.9410982131958
+    },
+    "211": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 423,
+        "quantile_active_qubits": 846,
+        "depth": 57152,
+        "swaps": 55463,
+        "active_qubits": 846,
+        "wall_clock": 1053.7789931297302
+    },
+    "212": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 425,
+        "quantile_active_qubits": 850,
+        "depth": 51692,
+        "swaps": 49996,
+        "active_qubits": 850,
+        "wall_clock": 1105.9601018428802
+    },
+    "213": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 427,
+        "quantile_active_qubits": 854,
+        "depth": 56531,
+        "swaps": 54827,
+        "active_qubits": 854,
+        "wall_clock": 1203.7494478225708
+    },
+    "214": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 429,
+        "quantile_active_qubits": 858,
+        "depth": 59897,
+        "swaps": 58185,
+        "active_qubits": 858,
+        "wall_clock": 1164.9151422977448
+    },
+    "215": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 431,
+        "quantile_active_qubits": 862,
+        "depth": 60569,
+        "swaps": 58848,
+        "active_qubits": 862,
+        "wall_clock": 1159.3666996955872
+    },
+    "216": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 433,
+        "quantile_active_qubits": 866,
+        "depth": 61975,
+        "swaps": 60247,
+        "active_qubits": 866,
+        "wall_clock": 1326.4864614009857
+    },
+    "217": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 435,
+        "quantile_active_qubits": 870,
+        "depth": 62344,
+        "swaps": 60608,
+        "active_qubits": 870,
+        "wall_clock": 1199.4286603927612
+    },
+    "218": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 437,
+        "quantile_active_qubits": 874,
+        "depth": 60095,
+        "swaps": 58351,
+        "active_qubits": 874,
+        "wall_clock": 1218.935043811798
+    },
+    "219": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 439,
+        "quantile_active_qubits": 878,
+        "depth": 66337,
+        "swaps": 64584,
+        "active_qubits": 878,
+        "wall_clock": 1240.60493516922
+    },
+    "220": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 441,
+        "quantile_active_qubits": 882,
+        "depth": 62444,
+        "swaps": 60684,
+        "active_qubits": 882,
+        "wall_clock": 1203.1056687831879
+    },
+    "221": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 443,
+        "quantile_active_qubits": 886,
+        "depth": 64757,
+        "swaps": 62989,
+        "active_qubits": 886,
+        "wall_clock": 1285.7238562107086
+    },
+    "222": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 445,
+        "quantile_active_qubits": 890,
+        "depth": 61471,
+        "swaps": 59693,
+        "active_qubits": 890,
+        "wall_clock": 1261.613758802414
+    },
+    "223": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 447,
+        "quantile_active_qubits": 894,
+        "depth": 61552,
+        "swaps": 59768,
+        "active_qubits": 894,
+        "wall_clock": 1261.8238883018494
+    },
+    "224": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 449,
+        "quantile_active_qubits": 898,
+        "depth": 56584,
+        "swaps": 54792,
+        "active_qubits": 898,
+        "wall_clock": 1340.0530309677124
+    },
+    "225": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 451,
+        "quantile_active_qubits": 902,
+        "depth": 60547,
+        "swaps": 58747,
+        "active_qubits": 902,
+        "wall_clock": 1419.2228045463562
+    },
+    "226": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 453,
+        "quantile_active_qubits": 906,
+        "depth": 65533,
+        "swaps": 63725,
+        "active_qubits": 906,
+        "wall_clock": 1436.1682238578796
+    },
+    "227": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 455,
+        "quantile_active_qubits": 910,
+        "depth": 62046,
+        "swaps": 60230,
+        "active_qubits": 910,
+        "wall_clock": 1460.5879564285278
+    },
+    "228": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 457,
+        "quantile_active_qubits": 914,
+        "depth": 63553,
+        "swaps": 61729,
+        "active_qubits": 914,
+        "wall_clock": 1461.0712566375732
+    },
+    "229": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 459,
+        "quantile_active_qubits": 918,
+        "depth": 69853,
+        "swaps": 68021,
+        "active_qubits": 918,
+        "wall_clock": 1555.3413591384888
+    },
+    "230": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 461,
+        "quantile_active_qubits": 922,
+        "depth": 67806,
+        "swaps": 65966,
+        "active_qubits": 922,
+        "wall_clock": 1534.1478333473206
+    },
+    "231": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 463,
+        "quantile_active_qubits": 926,
+        "depth": 72692,
+        "swaps": 70844,
+        "active_qubits": 926,
+        "wall_clock": 1552.6694478988647
+    },
+    "232": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 465,
+        "quantile_active_qubits": 930,
+        "depth": 69928,
+        "swaps": 68072,
+        "active_qubits": 930,
+        "wall_clock": 1523.9689228534698
+    }
+}

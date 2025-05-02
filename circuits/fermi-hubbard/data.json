@@ -1,0 +1,21 @@
+[
+    {
+        "basis circ": "Fermi-Hubbard",
+        "bc size": "",
+        "basis graph": "plus-square",
+        "bg size": "",
+        "min_depth": 15,
+        "depth": 15,
+        "d. overh.": 0,
+        "d. overh. (%)": 0.0,
+        "merge swaps": false,
+        "cyclic": true,
+        "q. overh.": 0,
+        "nkd swaps": 0,
+        "bg num seeds": 5,
+        "minimize swaps": true,
+        "fixed_naked_swaps": false,
+        "wall clock": 78.3444435596466,
+        "slice depth": null
+    }
+]

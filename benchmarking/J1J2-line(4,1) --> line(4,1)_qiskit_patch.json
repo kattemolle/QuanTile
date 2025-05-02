@@ -1,0 +1,22 @@
+{
+    "1": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 3,
+        "quantile_active_qubits": 6,
+        "depth": 11,
+        "swaps": 3,
+        "active_qubits": 6,
+        "wall_clock": 0.01302027702331543
+    },
+    "2": {
+        "quantile_depth": 5,
+        "quantile_wall_clock": 4.625952243804932,
+        "quantile_swaps": 5,
+        "quantile_active_qubits": 10,
+        "depth": 21,
+        "swaps": 5,
+        "active_qubits": 10,
+        "wall_clock": 0.017414331436157227
+    }
+}
