@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Main file containing definitions for QuanTile, the tilable quantum circuit compiler.
+This file contains the transpiler class.
 """
 from time import time
 from copy import deepcopy
@@ -41,9 +41,8 @@ class Transpiler:
 
         # Transpiling options, to be set by directly setting the instance attribute. Below are the standard options, that you should override externally if you want to change them.
         self.cyclic = False
-        self.fixed_depth = (
-            False  # If set to an int, this int will be used as the fixed depth.
-        )
+        self.fixed_depth = False  # If set to an int, this int will be used as the number of naked swaps.
+        self.fixed_naked_swaps = False  # If set to an int AND merge_swaps == True, the number of naked swaps will be fixed to the int. It has no use setting this to an int if swaps cannot be merge.
         self.gate_dependencies = True
         self.merge_swaps = False
         self.slice_depth = None  # If set to an int d, the basis circuit is sliced into slices of depth d and the solver is run for these slices separately, after which the solutions are stitched together.
@@ -73,7 +72,7 @@ class Transpiler:
             self.final_map == other.final_map,
             self.sub_transpiler == other.sub_transpiler,
             self.minimize_swaps == other.minimize_swaps,
-        ]
+        ]  # WARNING : comparison of fixed_naked_swaps is omitted for backward compatibility.
         return all(lst)
 
     def solve(self):
@@ -183,6 +182,8 @@ class Transpiler:
         def declare_rswaps(depth):
             """
             Return the list rswaps, where rswaps[T] is the list of swaps at time T.
+
+            TODO : If cyclic == True, there can be no swaps in the first layer. So if cyclic == True, we need not introduce rswap variables for the first layer, which would make the solver faster.
             """
 
             all_rswaps = []
@@ -193,7 +194,7 @@ class Transpiler:
                 r = depth - 1
             for T in range(r):
                 all_rswapsT = []  # All swaps at time T.
-                rswapsT = []  # Only those swaps in the unit cell.
+                rswapsT = []  # Only those swaps in the basis graph.
                 for edge in self.basis_graph.edges:
                     on = z3.Bool(
                         "rSWAP_T={}_base_edge={}".format(T, edge.to_tuple())
@@ -309,9 +310,13 @@ class Transpiler:
             )
             if self.cyclic:
                 cs.cyclic(solver, pqs)
+            if type(self.fixed_naked_swaps) == int and self.merge_swaps == False:
+                print(
+                    "WARNING : fixed_naked swaps set but this has no effect since merge_swaps==False"
+                )
             if self.minimize_swaps:
                 cs.minimize_swaps(
-                    solver, rswaps, self.merge_swaps, pgs
+                    solver, rswaps, self.merge_swaps, pgs, self.fixed_naked_swaps
                 )  # TODO z3 Optimization module not efficient.
 
             sol = solver.check()
@@ -380,7 +385,7 @@ class Transpiler:
         # End of defs in solve().
         assert (
             self.basis_graph.get_smax() >= self.basis_circ.get_smax()
-        ), "The number of seeds in the basis graph must at least be the number of seed qubits in the basis circuit. Take a bigger patch, reseed it, and set it as the new input basis graph."
+        ), f"The number of seeds in the basis graph ({self.basis_graph.get_smax()+1}) must at least be the number of seed qubits in the basis circuit ({self.basis_circ.get_smax()+1}). Take a bigger patch, reseed it, and set it as the new input basis graph."
 
         print()
         if self.sub_transpiler == False:
@@ -589,7 +594,7 @@ class Transpiler:
 
         return self.solution
 
-    def plot_solution(self, folder="plots"):
+    def plot_solution(self, folder="plots/circuits/"):
         """
         Put a sequence of pdfs in folder `folder` that depict the layers of the circuit. A 3x3 patch of the device connectivity graph is depicted with grey edges. Blue edges depict 2-qubit gates from the circuit. Blue edges depict the swaps. The solution basis circuit is bold.
         """
@@ -669,7 +674,12 @@ class Transpiler:
 
         if os.path.isfile(fname):
             with open(fname, "rb") as f:
-                db = pickle.load(f)
+                fcntl.flock(f, fcntl.LOCK_SH)  # Shared lock
+                try:
+                    db = pickle.load(f)
+                finally:
+                    fcntl.flock(f, fcntl.LOCK_UN)  # Release lock
+
         else:
             db = {}
 
@@ -686,6 +696,8 @@ class Transpiler:
         with open(fname, "wb") as f:
             fcntl.flock(f, fcntl.LOCK_EX)
             pickle.dump(db, f)
+            f.flush()
+            os.fsync(f.fileno())
             fcntl.flock(f, fcntl.LOCK_UN)
 
     def append_to_qasm_database(self, fname="solutions_qasm.txt"):

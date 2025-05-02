@@ -60,6 +60,15 @@
         ],
         "note": "misc"
     },
+    "diamond-square": {
+        "edges": [
+            "((0, 0, 0), (0, 0, 1))",
+            "((0, 0, 0), (0, -1, 1))",
+            "((0, 0, 1), (1, 0, 0))",
+            "((0, 0, 1), (1, 1, 0))"
+        ],
+        "note": "misc"
+    },
     "heavy-hex": {
         "edges": [
             "((0, 0, 0), (0, 0, 1))",
@@ -229,7 +238,7 @@
         ],
         "note": "archimedean"
     },
-    "union_jack": {
+    "union-jack": {
         "edges": [
             "(0, 0, 0), (0, 0, 1)",
             "(0, 0, 0), (1, 0, 0)",
@@ -305,7 +314,7 @@
         ],
         "note": "laves"
     },
-    "floret_pentagonal": {
+    "floret-pentagonal": {
         "edges": [
             "(0, 0, 0), (0, 0, 1)",
             "(0, 0, 0), (0, 0, 8)",
@@ -325,7 +334,7 @@
         ],
         "note": "laves"
     },
-    "cairo_pentagonal": {
+    "cairo-pentagonal": {
         "edges": [
             "(0, 0, 0), (0, 0, 1)",
             "(0, 0, 0), (-1, 1, 2)",

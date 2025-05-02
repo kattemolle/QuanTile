@@ -237,7 +237,7 @@ def dag_equal(c, cp, plot_dags=False, file1="c", file2="cp"):
     return all(cond)
 
 
-def verification(t, n=4, m=4):
+def verification(t, n=4, m=4, fast=False):
     """
     For a transpiler object t for which a solution was obtained, verify that the nxm patch generated from the routed circuit is equal to the nxm patch generated from the basis circuit by comparing their DAG representations.
     """
@@ -276,9 +276,14 @@ def verification(t, n=4, m=4):
             _phys_qubits.append(time_slice)
         phys_qubits = _phys_qubits
 
-    rc = rbc.get_completed_patch(
-        n, m, phys_qubits=phys_qubits
-    ).to_dag()  # This also test there are no collisions
+    if fast == False:
+        rc = rbc.get_completed_patch(
+            n, m, phys_qubits=phys_qubits
+        ).to_dag()  # This also test there are no collisions
+    else:
+        rc = rbc.get_patch_fast(
+            n, m, return_set=False
+        ).to_dag()  # This also test there are no collisions
 
     # Construct initial and final map for the patch
     map_model = t.solution[
@@ -340,6 +345,7 @@ def route_qsim(
     gate_dependencies=False,
     slice_depth=None,
     minimize_swaps=False,
+    fixed_naked_swaps=False,
 ):
     # Create basis circuit
     bg = BasisGraph.from_json(basis_circuit_name)
@@ -357,6 +363,7 @@ def route_qsim(
     t.gate_dependencies = gate_dependencies
     t.slice_depth = slice_depth
     t.minimize_swaps = minimize_swaps
+    t.fixed_naked_swaps = fixed_naked_swaps
 
     t.solve()
     return t

@@ -204,14 +204,10 @@ def test_from_dag():
 
 
 def test():
+    tests = []
+
     def route_append_plot_and_test(args):
-        t = ut.route_qsim(*args)
-        t.add_to_database("test")
-        t.append_to_qasm_database("test_solutions_qasm.txt")
-        # t.plot_solution("test")
-        # print(t.solution["routed_basis_circ"].gates)
-        assert qt.verification(t)
-        assert test_verification(t)
+        tests.append(args)
 
     for merge_swaps in [True, False]:
         for cyclic in [False, True]:
@@ -277,12 +273,32 @@ def test():
                             ]
                         )
 
+    return tests
+
+
+def test_get_patch_fast():
+    print("hi")
+    db = qt.load_solution_database("../circuits/solutions.pkl")
+    for group in db:
+        for t in db[group]:
+            if t.solution["solved"] == True:
+                if (
+                    t.merge_swaps == False
+                ):  # Because currently only implemented for this option.
+                    v = qt.verification(t, fast=True)
+                    assert v
+                    print(v)
+                    v = qt.verification(t)
+
+
+# test_get_patch_fast()
+
 
 def test_database():
     """
     Test all solutions from the solution database, and test that the test fails if the solution is corrupted.
     """
-    db = qt.load_solution_database("circuits/solutions.pkl")
+    db = qt.load_solution_database("../circuits/solutions.pkl")
     for group in db:
         if group != "test":  # The group 'test' was already tested.
             for i, t in enumerate(db[group]):
@@ -297,8 +313,11 @@ def test_database():
 
 
 if __name__ == "__main__":
-    print("Routing and testing:")
-    test()
-    print()
-    print("Testing database:")
-    test_database()
+    TASK_ID = int(sys.argv[1])
+    print("Routing and testing.")
+    tests = test()
+    print("Running test", TASK_ID - 1, "of", len(tests))
+    args = tests[TASK_ID - 1]
+    t = ut.route_qsim(*args)
+    assert qt.verification(t)
+    assert test_verification(t)

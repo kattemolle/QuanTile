@@ -10,6 +10,7 @@ from .base import Qubit
 def mapping(
     solver, basis_graph, logic_qubits, phys_qubits, depth, Smax, init_map, final_map
 ):
+    # TODO : since the init mapping is seed-to-seed, and because of the structure of the swap gates, this property is conserved, is a much more effienct encoding possible that only maps seeds to seeds throughout?
     if init_map == None:
         # At T=0, logical qubits are fixed to their cell.
         for lq, pq in phys_qubits[0].items():
@@ -235,8 +236,9 @@ def cyclic(solver, phys_qubits):
         solver.add(phys_qubits[0][lq] == phys_qubits[-1][lq])
 
 
-def gate_dependencies(solver, basis_circ, phys_gates):
-    deps = basis_circ.get_gate_dependencies()
+def gate_dependencies(solver, basis_circ, phys_gates, deps=None):
+    if deps == None:
+        deps = basis_circ.get_gate_dependencies()
     for gate, gatep in deps:
         solver.add(phys_gates[gate].t < phys_gates[gatep].t)
 
@@ -257,7 +259,7 @@ def no_swap_swap_collisions(
 
 
 def minimize_swaps(
-    solver, rswaps, merge_swaps, phys_gates
+    solver, rswaps, merge_swaps, phys_gates, fixed_naked_swaps
 ):  # Only called when minimize_swaps==True
     if (
         merge_swaps == True
@@ -300,7 +302,10 @@ def minimize_swaps(
 
         num_nak_swaps = z3.Int("num_nak_swaps")
         solver.add(num_nak_swaps == sum(o_int_lst))
-        solver.minimize(num_nak_swaps)
+        if type(fixed_naked_swaps) == int:
+            solver.add(num_nak_swaps == fixed_naked_swaps)
+        else:
+            solver.minimize(num_nak_swaps)
 
     # Always minimize the total number of swap instructions.
     swap_vars = [z3.If(rswap.on, 1, 0) for rswapsT in rswaps for rswap in rswapsT]

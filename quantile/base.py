@@ -9,6 +9,7 @@ import ast
 import networkx as nx
 import os
 from importlib.resources import files
+import fcntl
 
 
 class Qubit:
@@ -616,6 +617,8 @@ class BasisCirc(Circ):
         """
         Return circuit on a patch of n (horizontal) by m (vertical) by nc (time direction) circuit cells.
         `lm` and `ln` set the lower bound of the coordinate. If set, the basis graph's indices range over range(ln,n) and range(lm,m).
+
+        TODO : This is currently much slower than needed.
         """
         gates = []
         for dx in range(ln, n):
@@ -634,7 +637,9 @@ class BasisCirc(Circ):
 
         return p
 
-    def get_completed_patch(self, n, m, phys_qubits=None, nc=1):
+    def get_completed_patch(
+        self, n, m, phys_qubits=None, nc=1, return_phys_qubits=False
+    ):
         """
         Return circuit on a patch of n (horizontal) by m (vertical) by nc (time direction) circuit cells completed with the appropriate extra rSWAPs coming from other tiles.
 
@@ -642,6 +647,9 @@ class BasisCirc(Circ):
 
         For a routed basis circ to be equivalent to the basis circ, boundary rSWAPs need to be taken into account. So even when we route a single basis circuit, that routed circuit becomes equivalent to the basis circuit only after calling get_completed_patch(1,1,phys_qubits)
 
+        WARNING : The option return_phys_qubits=False was added after the solution database was pickled, meaning that the (routed) basis circs in the database do not have this option. To use this option, just construct a new instance from the old instance.
+
+        TODO : This is currently much slower than needed.
         """
         assert type(self) != BasisGraph
         assert phys_qubits != None
@@ -664,7 +672,9 @@ class BasisCirc(Circ):
         # Construct the boundary
         lp = self.get_open_patch(n + 3, m + 3, -2, -2).gates
         sp = self.get_open_patch(n, m).gates
-        bdry = list(set(lp) - set(sp))
+        bdry = list(
+            set(lp) - set(sp)
+        )  # Can be spead up: 1. one only needs the rSWAPs (and the gates where swap=True) 2. One only needs those gates in the boundary.
         _bdry = []
         for g in bdry:
             if g.name == "rSWAP" and g.acts_on_logical_qubit(epq):
@@ -676,11 +686,14 @@ class BasisCirc(Circ):
 
         # Merge boundary and the patch
         p = sp + bdry
-        p = Circ(p)
+        p = Circ(p)  # Can be spead up by turning off all checks
         p = p.repeated(nc)
         # p = p.rescheduled()
 
-        return p
+        if return_phys_qubits:
+            return p, epq
+        else:
+            return p
 
     get_patch = get_open_patch
 
@@ -965,6 +978,8 @@ class RoutedBasisCirc(BasisCirc):
     A basis circ with no congruent seeds checking by default. Also, get_patch will automaticaly return the completed patch, and get_gates will return a completed patch of 1 by 1 basis circuits. Also, providing a qubit map phys_qubits is mandatory.
 
     TODO : Make sure all calls to BasisCirc are to RoutedBasisCirc in the apropriate places.
+
+    WARNING : The option return_phys_qubits=False was added after the solution database was pickled, meaning that the routed basis circs in the database do not have this option. To use this option, just construct a new instance from the old instance.
     """
 
     def __init__(
@@ -993,8 +1008,48 @@ class RoutedBasisCirc(BasisCirc):
         p = self.get_completed_patch(n, m, phys_qubits=self.phys_qubits, nc=nc)
         return p.gates
 
-    def get_patch(self, n, m, nc=1):
-        return self.get_completed_patch(n, m, phys_qubits=self.phys_qubits, nc=nc)
+    def get_patch_fast(self, n, m, nc=1, return_phys_qubits=False):
+        return self.get_completed_patch(
+            n,
+            m,
+            phys_qubits=self.phys_qubits,
+            nc=nc,
+            return_phys_qubits=return_phys_qubits,
+        )
+
+    def get_patch_fast(self, n, m, return_set=True):
+        """
+        TODO : this method has not yet ben tested properly and at the moment only works when there are no merged swaps, though it is easy to create this functionality.
+        WARNING : This method was added after solutions.pkl was populated. So to use this function for the solutions in solutions.pkl, either recreate the routed basis circuit instance or copy paste and use this function externally.
+
+        Also, for speed, note it returns a set of gates rather than a Circ object.
+
+        Returns a set containing Gates.
+        """
+        # First, reconstruct routed basis circuit with all swaps added back.
+        gates = self.gates
+        new_gates = []
+        for gate in gates:
+            assert gate.swap == False, "Not yet implemented for merged swap gates."
+            if gate.name != "rSWAP":
+                new_gates.append(gate)
+            else:
+                for i in [-1, 0, 1]:
+                    for j in [-1, 0, 1]:
+                        new_gates.append(gate.translated(i, j))
+        gates = new_gates
+
+        # Then, create the patch.
+        new_gates = set()
+        for i in range(n):
+            for j in range(m):
+                for gate in gates:
+                    new_gates.add(gate.translated(i, j))
+
+        if return_set == False:
+            return Circ(list(new_gates))
+        else:
+            return new_gates
 
 
 class Edge(Gate):
@@ -1121,7 +1176,7 @@ class BasisGraph(BasisCirc):
         headclip = "false"
         tailclip = "false"
         base_color = "#80808099"  # Translucent Gray
-        fontsize = 10
+        fontsize = 20
 
         p = self.get_open_patch(5, 5)
         tp = p.translated(-2, -2)
@@ -1155,7 +1210,7 @@ class BasisGraph(BasisCirc):
 
         return g
 
-    def save_plot(self, folder="../basis_graph_plots", node_labels=False):
+    def save_plot(self, folder="plots/basis_graphs", node_labels=False):
         g = self.get_plot_graph(node_labels=node_labels)
         g = nx.nx_agraph.to_agraph(g)
         import warnings
@@ -1173,7 +1228,11 @@ def load_solution_database(fname="solutions.pkl"):
 
     if os.path.isfile(fname):
         with open(fname, "rb") as f:
-            db = pickle.load(f)
+            fcntl.flock(f, fcntl.LOCK_SH)  # Shared lock
+            try:
+                db = pickle.load(f)
+            finally:
+                fcntl.flock(f, fcntl.LOCK_UN)  # Release lock
     else:
         db = {}
 

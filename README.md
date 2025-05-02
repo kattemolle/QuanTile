@@ -1,6 +1,6 @@
 <img src="images/quantile.png" width="300" class="center"/>
 
-This repository contains the code, data and images for the qubit routing of tillable circuits. For installation instructions, see [installation](#installation). Feedback is appreciated at _physics at kattemolle dot com_. 
+This repository contains the code, data, and images for the qubit routing of tileable circuits ([arXiv:2503.14592](https://arxiv.org/abs/2503.14592)). For installation instructions, see [installation](#installation). Feedback is appreciated at _physics at kattemolle dot com_. 
 
 # Example
 We optimally route a circuit on a line of qubits, with gates to nearest and **next-nearest neighbors**, to quantum hardware with a line of qubits offering only nearest-neighbor connectivity. 
@@ -10,6 +10,7 @@ The displayed code is in Python 3.
 
 ```python
 import quantile as qt
+
 q0 = qt.Qubit(0, 0, 0)
 q1 = qt.Qubit(0, 0, 1)
 q2 = qt.Qubit(0, 0, 2)
@@ -47,7 +48,9 @@ bc = qt.BasisCirc(gates)
 ```
 
 ---
-(**Optional**) For visualization, we convert the above circuit to OpenQasm 3, and visualize it with Qiskit. (If you want to run this, first install Qiskit with qasm3 capability by running `pip install qiskit'[qasm3-import]'` or `pip install qiskit[qasm3-import]` in bash. It is not included in the standard installation of QuanTile)
+(**Optional**) For visualization, we convert the above circuit to OpenQasm 3, and visualize it with Qiskit. 
+
+NOTE : The below is just for visualization of the circuit with Qiskit and otherwise unrelated to QuanTile. If you want to run this, first install Qiskit with qasm3 capability by running `pip install qiskit'[qasm3-import]'` or `pip install qiskit[qasm3-import]` in bash. It is not included in the standard installation of QuanTile. Qiskit orders qubits differently from python instance to python instance; this may lead Qiskit to throw errors (unrelated to QuanTile) with the manual wire orderings used below.
 
 
 ```python
@@ -55,7 +58,14 @@ from qiskit.qasm3 import loads
 
 s = bc.to_qasm()
 c = loads(s)
-wo = [2,0,4,1,5,3] # Just to put the qubits in the correct order for visualization.
+wo = [
+    2,
+    0,
+    4,
+    1,
+    5,
+    3,
+]  # Just to put the qubits in the correct order for visualization. 
 print(c.draw(with_layout=False, wire_order=wo))
 ```
 
@@ -81,7 +91,22 @@ Basis circuits can be repeated spatially concurrently without causing gate colli
 c = bc.get_patch(3, 1)
 c = c.to_qasm()
 c = loads(c)
-wo2 = [4, 0, 8, 2, 12, 3, 6, 1, 5, 13, 9, 11, 10, 7] # Just to put the qubits in the correct order for visualization.
+wo2 = [
+    4,
+    0,
+    8,
+    2,
+    12,
+    3,
+    6,
+    1,
+    5,
+    13,
+    9,
+    11,
+    10,
+    7,
+]  # Just to put the qubits in the correct order for visualization. 
 print(c.draw(with_layout=False, wire_order=wo2))
 ```
 
@@ -139,7 +164,9 @@ t.gate_dependencies = False  # Allow the transpiler to reorder the gates, as is 
 t.merge_swaps = (
     True  # Allow SWAP gates to be merged into two-qubit gates immedeately preceding it.
 )
-t.minimize_swaps = True # After minimizing the depth, also minimize the number of SWAP gates.
+t.minimize_swaps = (
+    True  # After minimizing the depth, also minimize the number of SWAP gates.
+)
 sol = t.solve()
 rbc = sol["routed_basis_circ"]
 ```
@@ -157,9 +184,9 @@ rbc = sol["routed_basis_circ"]
 
 
 ```python
-c = rbc.get_patch(1,1).to_qasm()
+c = rbc.get_patch(1, 1).to_qasm()
 c = loads(c)
-wo3=[2,0,4,1,5,3]
+wo3 = [2, 0, 4, 1, 5, 3]
 print(c.draw(with_layout=False, wire_order=wo3))
 ```
 
@@ -184,7 +211,7 @@ The whole point of Quantile is that also the solution can be repeated at will, w
 
 
 ```python
-c = rbc.get_patch(3, 1) 
+c = rbc.get_patch(3, 1)
 c = c.to_qasm()
 c = loads(c)
 print(c.draw(with_layout=False, wire_order=wo2))
@@ -246,8 +273,23 @@ rbcs = rbc.to_suzuki_basis_circ(2, 2)
 c = rbcs.get_patch(3, 1)
 c = c.to_qasm()
 c = loads(c)
-wo4 = [4,0,8,2,12,3,6,1,5,13,9,11,10,7] # Just to put the qubits in the correct order in visualization.
-print(c.draw(with_layout=False,wire_order=wo4))
+wo4 = [
+    4,
+    0,
+    8,
+    2,
+    12,
+    3,
+    6,
+    1,
+    5,
+    13,
+    9,
+    11,
+    10,
+    7,
+]  # Just to put the qubits in the correct order in visualization.
+print(c.draw(with_layout=False, wire_order=wo4))
 ```
 
                 ┌───────────┐                                                      »
@@ -377,7 +419,7 @@ Let us illustrate `qt.route_qsim` by again routing the circuit with a gate $G$ a
 t = qt.route_qsim("J1J2-line", (4, 1), "line", (4, 1))
 rbc = t.solution["routed_basis_circ"]
 rbcs = rbc.to_suzuki_basis_circ(2, 2)
-c = rbcs.get_patch(3,1)
+c = rbcs.get_patch(3, 1)
 ```
 
     
@@ -436,7 +478,7 @@ Again, to obtain the routed, second order Suzuki circuit with two repetitions, w
 ```python
 rbc = t.solution["routed_basis_circ"]
 rbcs = rbc.to_suzuki_basis_circ(2, 2)
-c = rbcs.get_patch(3,3)
+c = rbcs.get_patch(3, 3)
 ```
 
     Creating second order circuit
@@ -445,14 +487,14 @@ c = rbcs.get_patch(3,3)
 
 # Precomputed solutions
 
-NOTE: These will be added later. 
+To use precomputed solutions, and access benchmarking data, pull and checkout the `results` branch. 
+Entire transpiler objects, containing the input basis circuits, input basis graphs, and the routing solutions, can be unpickled from `circuits/solutions.pkl`. All these solutions are also available in OpenQASM 3 at `circuits/solutions.qasm`.
 
-Entire transpiler objects, containing the input basis circuits, input basis graphs, and the routing solutions, can then be unpickled. Only use this if you trust the pickled objects.
 
 
 ```python
 db = (
-    qt.load_solution_database()
+    qt.load_solution_database("circuits/solutions.pkl")
 )  # This (and only this) loads the pickle module and unpickles circuits/solutions.pkl
 for group in db:  # Show the different groups of transpiler objects available
     print(group)
@@ -463,6 +505,15 @@ rbc = t.solution[
 ]  # Load the routed basis circuit as a qt.BasisCirc object.
 print(rbc.gates)
 ```
+
+    two-qudit
+    rule54
+    kogut-susskind
+    Fermi-Hubbard
+    rokhsar-kivelson
+    ladder(2,1) --> line(4,1)
+    [<Gate G (<Qubit (0, 0, 0, False)>, <Qubit (0, 0, 3, False)>) 0 False>, <Gate G (<Qubit (0, 0, 1, False)>, <Qubit (1, 0, 2, False)>) 0 False>, <Gate G (<Qubit (0, 0, 1, False)>, <Qubit (0, 0, 3, False)>) 1 True>, <Gate G (<Qubit (0, 0, 2, False)>, <Qubit (0, 0, 0, False)>) 1 True>, <Gate G (<Qubit (0, 0, 0, False)>, <Qubit (0, 0, 3, False)>) 2 False>, <Gate G (<Qubit (0, 0, 1, False)>, <Qubit (1, 0, 2, False)>) 2 False>]
+
 
 For readability and interoperability, routing solutions (but also patches thereof) can be exported to OpenQASM 3 as shown before. 
 
@@ -476,16 +527,10 @@ print(rbc.to_qasm())
     
     // declare qubits
     qubit q_0_0_1;
-    qubit q_1_0_3;
     qubit q_0_0_3;
-    qubit q_1_1_3;
-    qubit q_0_min1_1;
     qubit q_0_0_0;
-    qubit q_0_1_2;
-    qubit q_1_0_1;
+    qubit q_1_0_2;
     qubit q_0_0_2;
-    qubit q_min1_0_0;
-    qubit q_1_min1_1;
     
     // declare gates
     gate G a, b
@@ -501,22 +546,12 @@ print(rbc.to_qasm())
     }
     
     // circuit
-    G q_0_0_3, q_0_0_1;
-    G q_0_0_0, q_0_0_2;
-    G q_0_0_3, q_0_min1_1;
-    G q_0_0_0, q_0_1_2;
-    swap_G q_0_0_0, q_0_0_1;
-    G q_0_0_3, q_0_0_2;
-    swap_G q_0_0_3, q_0_0_1;
+    G q_0_0_0, q_0_0_3;
+    G q_0_0_1, q_1_0_2;
+    swap_G q_0_0_1, q_0_0_3;
     swap_G q_0_0_2, q_0_0_0;
-    swap_G q_0_0_0, q_1_0_1;
-    G q_0_0_2, q_1_0_3;
-    swap_G q_0_0_2, q_0_0_0;
-    swap_G q_1_0_1, q_1_0_3;
-    G q_1_0_3, q_1_min1_1;
-    swap_G q_0_0_0, q_0_1_2;
-    G q_0_1_2, q_1_1_3;
-    G q_0_0_1, q_min1_0_0;
+    G q_0_0_0, q_0_0_3;
+    G q_0_0_1, q_1_0_2;
     
 
 
@@ -544,8 +579,11 @@ Our implementation is written in Python 3, relying on:
 - networkx
 - z3-solver
 - numpy
+
+For visualization (nonessential): 
 - graphviz
 - pygraphviz
+- qiskit[qasm3-import]
 
 Installing these programs and packages manually will possibly just work fine. However, it is possibly easiest to install [anaconda](https://docs.anaconda.com/free/anaconda/install/mac-os/) or [miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html). After that, in a bash terminal, change the directory to the base directory of the quantile repository, and run
 
@@ -559,13 +597,14 @@ We recommend the use of `environment/environment.yml`.
 # How to cite
 
 ``` bibtex
-@software{kattemolle2024quantile,
-  author       = {Kattem\"olle, Joris},
-  title        = {QuanTile},
-  month        = oct,
-  year         = 2024,
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.14336692}
+@misc{kattem0lle2025optimal,
+      title={Optimal and efficient qubit routing for quantum simulation}, 
+      author={Joris Kattem{\"o}lle and Guido Burkard},
+      year={2025},
+      eprint={2503.14592},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2503.14592},
+      doi={10.48550/arXiv.2503.14592}
 }
 ```
-
