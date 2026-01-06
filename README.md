@@ -2,7 +2,7 @@
 
 This repository contains the code, data, and images for the qubit routing of tileable circuits as descibed in:
 
-J. Kattemölle and G. Burkard, _Efficient Quantum Simulation for Translationally Invariant Systems_, [Physical Review Letters 136, 010602 (2026)](https://doi.org/10.1103/cswp-xy7k).
+J. Kattemölle and G. Burkard, _Efficient Quantum Simulation for Translationally Invariant Systems_, [Physical Review Letters **136**, 010602 (2026)](https://doi.org/10.1103/cswp-xy7k).
 
 For installation instructions, see [installation](#installation). Feedback is appreciated at _physics at kattemolle dot com_.
 
