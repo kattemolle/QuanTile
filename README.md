@@ -1,6 +1,10 @@
 <img src="images/quantile.png" width="300" class="center"/>
 
-This repository contains the code, data, and images for the qubit routing of tileable circuits ([arXiv:2503.14592](https://arxiv.org/abs/2503.14592)). For installation instructions, see [installation](#installation). Feedback is appreciated at _physics at kattemolle dot com_. 
+This repository contains the code, data, and images for the qubit routing of tileable circuits as descibed in:
+<p>
+J. Kattemölle and G. Burkard, _Efficient Quantum Simulation for Translationally Invariant Systems_, [Physical Review Letters 136, 010602 (2026)](https://doi.org/10.1103/cswp-xy7k).
+</p>
+For installation instructions, see [installation](#installation). Feedback is appreciated at _physics at kattemolle dot com_.
 
 # Example
 We optimally route a circuit on a line of qubits, with gates to nearest and **next-nearest neighbors**, to quantum hardware with a line of qubits offering only nearest-neighbor connectivity. 
@@ -487,8 +491,7 @@ c = rbcs.get_patch(3, 3)
 
 # Precomputed solutions
 
-To use precomputed solutions, and access benchmarking data, pull and checkout the `results` branch. 
-Entire transpiler objects, containing the input basis circuits, input basis graphs, and the routing solutions, can be unpickled from `circuits/solutions.pkl`. All these solutions are also available in OpenQASM 3 at `circuits/solutions.qasm`.
+To use precomputed solutions, and access benchmarking data, pull and checkout the `results` branch. (If you got your code from Zenodo, you're already in this branch). Entire transpiler objects, containing the input basis circuits, input basis graphs, and the routing solutions, can be unpickled from `circuits/solutions.pkl`. All these solutions are also available in OpenQASM 3 at `circuits/solutions.qasm`.
 
 
 
@@ -597,14 +600,18 @@ We recommend the use of `environment/environment.yml`.
 # How to cite
 
 ``` bibtex
-@misc{kattem0lle2025optimal,
-      title={Optimal and efficient qubit routing for quantum simulation}, 
-      author={Joris Kattem{\"o}lle and Guido Burkard},
-      year={2025},
-      eprint={2503.14592},
-      archivePrefix={arXiv},
-      primaryClass={quant-ph},
-      url={https://arxiv.org/abs/2503.14592},
-      doi={10.48550/arXiv.2503.14592}
+@article{kattemolle2026efficient,
+  title = {{Efficient Quantum Simulation for Translationally Invariant Systems}},
+  author = {Kattem\"olle, Joris and Burkard, Guido},
+  journal = {Physical Review Letters},
+  volume = {136},
+  issue = {1},
+  pages = {010602},
+  numpages = {7},
+  year = {2026},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/cswp-xy7k},
+  url = {https://link.aps.org/doi/10.1103/cswp-xy7k}
 }
 ```
